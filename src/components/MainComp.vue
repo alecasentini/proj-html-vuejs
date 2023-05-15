@@ -1,10 +1,12 @@
 <script >
 import CardsTopComp from './CardsTopComp.vue';
+import TopCoursesComp from './TopCoursesComp.vue'
 
 export default {
     name: "MainComp",
     components: {
-        CardsTopComp
+        CardsTopComp,
+        TopCoursesComp
 
     }
 
@@ -14,6 +16,7 @@ export default {
 
 <template>
     <CardsTopComp />
+    <TopCoursesComp />
 </template>
 
 <style lang="scss" scoped></style>
