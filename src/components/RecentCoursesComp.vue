@@ -186,7 +186,7 @@ export default {
 </script>
 
 <template>
-    <div class="w-90 my-5">
+    <div class="w-90 my-5 d-flex flex-column align-items-center">
         <h2 class="text-center py-3" style="font-size: 50px; font-weight: 300;">Recent Courses</h2>
 
         <div class="d-flex justify-content-center">
@@ -211,6 +211,8 @@ export default {
                 :rating="elem.rating" />
 
         </div>
+
+        <button type="button" class="btn">SHOW ALL</button>
     </div>
 </template>
 
@@ -237,5 +239,14 @@ ul {
         }
     }
 
+}
+
+.btn {
+    background-color: #195ec8;
+    color: white;
+    font-weight: bolder;
+    border-radius: 25px;
+    padding: 10px 30px;
+    margin: 50px 0;
 }
 </style>
