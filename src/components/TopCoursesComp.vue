@@ -46,7 +46,7 @@ export default {
 
 <template>
     <!-- top courses -->
-    <div class="d-flex flex-column w-75">
+    <div class="d-flex flex-column w-75 py-5">
         <div class="row">
             <!-- 1 big & 2 normal-->
             <div class="big col-8">
