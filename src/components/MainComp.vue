@@ -3,6 +3,7 @@ import CardsTopComp from './CardsTopComp.vue';
 import TopCoursesComp from './TopCoursesComp.vue';
 import LimitlessComp from './LimitlessComp.vue'
 import RecentCoursesComp from './RecentCoursesComp.vue';
+import ProudComp from './ProudComp.vue';
 
 export default {
     name: "MainComp",
@@ -10,7 +11,8 @@ export default {
         CardsTopComp,
         TopCoursesComp,
         LimitlessComp,
-        RecentCoursesComp
+        RecentCoursesComp,
+        ProudComp
 
     }
 
@@ -23,6 +25,7 @@ export default {
     <TopCoursesComp />
     <LimitlessComp />
     <RecentCoursesComp />
+    <ProudComp />
 </template>
 
 <style lang="scss" scoped></style>

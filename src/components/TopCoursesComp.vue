@@ -50,7 +50,10 @@ export default {
         <div class="row">
             <!-- 1 big & 2 normal-->
             <div class="big col-8">
-                <img :src="courses[0].img" :alt="courses[0].name">
+                <div>
+                    <img :src="courses[0].img" :alt="courses[0].name">
+                </div>
+
                 <div class="d-flex justify-content-between py-3">
                     <h5>{{ courses[0].name }}</h5>
                     <span>{{ courses[0].quantity }} Courses</span>
@@ -59,7 +62,10 @@ export default {
 
             <div class="d-flex flex-column col-4">
                 <div v-for="index in 2" :key="index" class="normal ">
-                    <img :src="courses[index].img" :alt="courses[index].name">
+                    <div>
+                        <img :src="courses[index].img" :alt="courses[index].name">
+                    </div>
+
                     <div class="d-flex justify-content-between py-3">
                         <h5>{{ courses[index].name }}</h5>
                         <span>{{ courses[index].quantity }} Courses</span>
@@ -72,7 +78,10 @@ export default {
         <div class="row">
             <!-- 3 normal-->
             <div v-for="index in 3" :key="index" class="normal col-4">
-                <img :src="courses[index + 2].img" :alt="courses[index].name">
+                <div>
+                    <img :src="courses[index + 2].img" :alt="courses[index].name">
+                </div>
+
                 <div class="d-flex justify-content-between py-3">
                     <h5>{{ courses[index + 2].name }}</h5>
                     <span>{{ courses[index + 2].quantity }} Courses</span>
@@ -92,14 +101,39 @@ export default {
     margin: 0 auto;
 
     .big {
-        img {
-            width: 100%;
+        div {
+            overflow: hidden;
+
+            img {
+                width: 100%;
+
+
+                &:hover {
+                    transform: scale(1.2);
+                    transition: all 1s;
+                    transform-origin: center;
+                    cursor: pointer;
+
+                }
+            }
         }
     }
 
     .normal {
-        img {
-            width: 100%;
+        div {
+            overflow: hidden;
+
+            img {
+                width: 100%;
+
+                &:hover {
+                    transform: scale(1.2);
+                    transition: all 1s;
+                    transform-origin: center;
+                    cursor: pointer;
+
+                }
+            }
         }
     }
 }

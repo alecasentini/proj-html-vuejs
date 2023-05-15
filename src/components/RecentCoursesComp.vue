@@ -212,7 +212,7 @@ export default {
 
         </div>
         <div class="d-flex justify-content-center">
-            <button type="button" class="btn">SHOW ALL</button>
+            <button type="button" class="btn" @click="setActiveCategory('All Categories')">SHOW ALL</button>
         </div>
 
 
@@ -251,5 +251,10 @@ ul {
     border-radius: 25px;
     padding: 10px 30px;
     margin: 50px 0;
+
+    &:hover {
+        background-color: #46c197;
+        color: white;
+    }
 }
 </style>

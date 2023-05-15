@@ -98,5 +98,10 @@ a {
     font-weight: bolder;
     border-radius: 25px;
     padding: 10px 30px;
+
+    &:hover {
+        background-color: #46c197;
+        color: white;
+    }
 }
 </style>
