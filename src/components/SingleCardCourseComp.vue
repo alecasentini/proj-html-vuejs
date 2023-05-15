@@ -67,7 +67,7 @@ export default {
 .card {
     border-radius: 0;
     border: 0;
-    max-height: 350px !important;
+    height: 310px !important;
     overflow: hidden;
     padding: 0;
     margin-right: 5px;
@@ -77,7 +77,7 @@ export default {
     .card-img-top {
         border-radius: 0;
         width: 100%;
-        max-height: 160px;
+        max-height: 150px;
 
     }
 

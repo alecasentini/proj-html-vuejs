@@ -186,7 +186,7 @@ export default {
 </script>
 
 <template>
-    <div class="w-90 my-5 d-flex flex-column align-items-center">
+    <div class="w-90 my-5 ">
         <h2 class="text-center py-3" style="font-size: 50px; font-weight: 300;">Recent Courses</h2>
 
         <div class="d-flex justify-content-center">
@@ -211,8 +211,11 @@ export default {
                 :rating="elem.rating" />
 
         </div>
+        <div class="d-flex justify-content-center">
+            <button type="button" class="btn">SHOW ALL</button>
+        </div>
 
-        <button type="button" class="btn">SHOW ALL</button>
+
     </div>
 </template>
 
