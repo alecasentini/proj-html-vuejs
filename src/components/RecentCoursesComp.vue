@@ -8,6 +8,7 @@ export default {
     },
     data() {
         return {
+            activeCategory: "All Categories",
             courses: [
                 {
                     category: 'Software Development',
@@ -156,7 +157,28 @@ export default {
 
             ]
         }
-    }
+    },
+    computed: {
+        categories() {
+            const categories = new Set();
+            this.courses.forEach(course => categories.add(course.category));
+            return Array.from(categories).sort();
+        },
+        filteredCourses() {
+            if (this.activeCategory === "All Categories") {
+                return this.courses;
+            } else {
+                return this.courses.filter(
+                    (course) => course.category === this.activeCategory
+                );
+            }
+        },
+    },
+    methods: {
+        setActiveCategory(category) {
+            this.activeCategory = category;
+        },
+    },
 
 
 }
@@ -167,10 +189,26 @@ export default {
     <div class="w-90 my-5">
         <h2 class="text-center py-3" style="font-size: 50px; font-weight: 300;">Recent Courses</h2>
 
+        <div class="d-flex justify-content-center">
+            <ul class="d-flex ps-0">
+                <li :class="{ active: activeCategory === 'All Categories' }" @click="setActiveCategory('All Categories')">
+                    All Categories
+                </li>
+                <li v-for="category in categories" :key="category" :class="{ active: activeCategory === category }"
+                    @click="setActiveCategory(category)">
+                    {{ category }}
+                </li>
+
+            </ul>
+
+
+        </div>
+
         <div class="d-flex justify-content-between flex-wrap">
-            <SingleCardCourseComp v-for="(elem, index) in courses" :key="index" :img="elem.img" :category="elem.category"
-                :subcategory="elem.subcategory" :name="elem.name" :featured="elem.featured" :label="elem.label"
-                :duration="elem.duration" :price="elem.price" :discount="elem.discount" :rating="elem.rating" />
+            <SingleCardCourseComp v-for="(elem, index) in filteredCourses" :key="index" :img="elem.img"
+                :category="elem.category" :subcategory="elem.subcategory" :name="elem.name" :featured="elem.featured"
+                :label="elem.label" :duration="elem.duration" :price="elem.price" :discount="elem.discount"
+                :rating="elem.rating" />
 
         </div>
     </div>
@@ -180,5 +218,24 @@ export default {
 .w-90 {
     width: 90%;
     margin: 0 auto;
+}
+
+ul {
+    cursor: pointer;
+
+    li {
+        list-style-type: none;
+        margin-left: 20px;
+        color: #195ec8;
+        padding: 10px 12px;
+
+        &.active {
+            color: #77777a;
+            background-color: #f2f6fb;
+            border-radius: 20px;
+
+        }
+    }
+
 }
 </style>
