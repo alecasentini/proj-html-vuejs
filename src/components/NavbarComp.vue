@@ -72,7 +72,7 @@ ul {
             padding: 0 2px;
             top: -100%;
             right: 0;
-            font-size: 14px;
+            font-size: 12px;
 
         }
     }

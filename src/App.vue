@@ -1,11 +1,13 @@
 <script >
 import HeaderComp from './components/HeaderComp.vue'
 import JumbotronComp from './components/JumbotronComp.vue'
+import MainComp from './components/MainComp.vue';
 export default {
   name: "App",
   components: {
     HeaderComp,
-    JumbotronComp
+    JumbotronComp,
+    MainComp
   }
 }
 
@@ -14,6 +16,7 @@ export default {
 <template>
   <HeaderComp />
   <JumbotronComp />
+  <MainComp />
 </template>
 
 <style lang="scss">

@@ -6,7 +6,7 @@ export default {
 </script>
 
 <template>
-    <div class="d-flex w-75 align-items-center">
+    <div class="d-flex w-75 align-items-center my-5" id="jumbo">
         <div class="w-50">
             <h1 style="font-size: 65px;">Start Investing in You</h1>
             <h4 class="my-5">With over 1200 courses in 18 subjects, you're guaranteed to find something that's right for
@@ -15,7 +15,7 @@ export default {
         </div>
 
         <div class="position-relative">
-            <img src="../../public/base.png" alt="base" style="z-index: -1;">
+            <img src="../../public/base.png" alt="base" style="width: 600px;">
             <img src="../../public/book1.png" alt="book1" id="book-1" class="position-absolute">
             <img src="../../public/book2.png" alt="book2" id="book-2" class="position-absolute">
             <img src="../../public/bubblespeech.png" alt="bubblespeech" id="bubblespeech" class="position-absolute">
@@ -28,7 +28,7 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-.w-75 {
+#jumbo {
     margin: 0 auto;
 }
 
