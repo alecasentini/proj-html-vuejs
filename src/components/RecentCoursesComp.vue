@@ -17,7 +17,7 @@ export default {
                     featured: false,
                     label: "",
                     duration: '6 hours',
-                    price: "Free",
+                    price: "free",
                     discount: "",
                     rating: ""
                 },
@@ -41,7 +41,7 @@ export default {
                     featured: false,
                     label: "hot",
                     duration: '',
-                    price: "Free",
+                    price: "free",
                     discount: "",
                     rating: "5"
                 },
@@ -82,17 +82,78 @@ export default {
                     rating: ""
                 },
                 {
-                    category: 'Art',
-                    subcategory: 'Art',
-                    name: 'Make your Concept Right and Beautiful',
-                    img: "../../public/cathryn-lavery-67852-unsplash-544x322.jpg",
+                    category: 'Exercise',
+                    subcategory: 'Bicycling',
+                    name: 'Road Bike Manual or How to Be a Champion.',
+                    img: "../../public/photo-1475452779376-caebfb988090-544x322.jpeg",
                     featured: false,
                     label: "",
                     duration: '6 hours',
-                    price: "$70",
+                    price: "$20",
                     discount: "",
                     rating: ""
                 },
+                {
+                    category: 'Photography',
+                    subcategory: 'Documentary',
+                    name: 'How to Make Beautiful Landscape photos?',
+                    img: "../../public/cristian-grecu-762012-unsplash-min-scaled-544x322.jpg",
+                    featured: false,
+                    label: "",
+                    duration: '6 hours',
+                    price: "$60",
+                    discount: "",
+                    rating: ""
+                },
+                {
+                    category: 'Art',
+                    subcategory: 'Art',
+                    name: 'Let`s paint Van Gogh`s Starry Night',
+                    img: "../../public/landscape-544x322.jpg",
+                    featured: false,
+                    label: "",
+                    duration: '6 hours',
+                    price: "$79",
+                    discount: "",
+                    rating: ""
+                },
+                {
+                    category: 'Software Development',
+                    subcategory: 'Nvidia',
+                    name: 'Nvidia and UE4 Technologies Practice',
+                    img: "../../public/12345-1-544x322.png",
+                    featured: false,
+                    label: "special",
+                    duration: '',
+                    price: "Free",
+                    discount: "",
+                    rating: "5"
+                },
+                {
+                    category: 'Art',
+                    subcategory: 'Art',
+                    name: 'How to work with Legendart RED camera?',
+                    img: "../../public/jakob-owens-198234-unsplash-min-1-544x322.png",
+                    featured: false,
+                    label: "special",
+                    duration: '6 hours',
+                    price: "Free",
+                    discount: "",
+                    rating: ""
+                },
+                {
+                    category: 'Software Development',
+                    subcategory: 'Software Development',
+                    name: 'MasterStudy Mobile LMS App',
+                    img: "../../public/promo_tf-544x322.jpg",
+                    featured: false,
+                    label: "",
+                    duration: '2 hours',
+                    price: "Free",
+                    discount: "",
+                    rating: ""
+                },
+
             ]
         }
     }
@@ -103,10 +164,10 @@ export default {
 </script>
 
 <template>
-    <div class="w-75 my-5">
+    <div class="w-90 my-5">
         <h2 class="text-center py-3" style="font-size: 50px; font-weight: 300;">Recent Courses</h2>
 
-        <div class="d-flex">
+        <div class="d-flex justify-content-between flex-wrap">
             <SingleCardCourseComp v-for="(elem, index) in courses" :key="index" :img="elem.img" :category="elem.category"
                 :subcategory="elem.subcategory" :name="elem.name" :featured="elem.featured" :label="elem.label"
                 :duration="elem.duration" :price="elem.price" :discount="elem.discount" :rating="elem.rating" />
@@ -116,7 +177,8 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-.w-75 {
+.w-90 {
+    width: 90%;
     margin: 0 auto;
 }
 </style>
