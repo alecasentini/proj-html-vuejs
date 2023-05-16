@@ -142,7 +142,7 @@ export default {
 
     #blog {
         .article {
-            height: 150px;
+            height: 130px;
 
             img {
 
@@ -151,12 +151,15 @@ export default {
 
             p {
                 color: lightgray;
+                font-size: 15px;
+                margin-bottom: 5px;
             }
 
             a {
                 color: #aaaaaa;
                 text-decoration: none;
                 font-weight: bold;
+                font-size: 15px;
             }
         }
     }
