@@ -12,8 +12,8 @@ export default {
     <div class="w-100 d-flex align-items-center my-5" id="limitless">
         <div class="w-75">
             <div class="w-50">
-                <h2 style="font-size: 50px; font-weight: 300;">Limitless learning, more possibilities</h2>
-                <h4 class="my-5">Online courses open the opporttunity fole learning to almost anyone, regardless of their
+                <h2 style="font-size: 50px; font-weight: 300;">Limitless learning,<br>more possibilities</h2>
+                <h4 class="my-5">Online courses open the opportunity for learning to almost anyone, regardless of their
                     scheduling commitments.
                 </h4>
                 <button type="button" class="btn">READ MORE</button>

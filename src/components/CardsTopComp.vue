@@ -27,7 +27,7 @@ export default {
         <div class="p-5 lb-card">
             <font-awesome-icon :icon="['far', 'calendar-check']" style="font-size: 50px
             ; color: #195ec8;" />
-            <h5 class="my-4">Graduate in as little 1 Year</h5>
+            <h5 class="my-4">Graduate in as little as 1 Year</h5>
             <p>Online post-graduate certificates are a popular way to develop your professional qualifications of
                 Masterstudy</p>
         </div>

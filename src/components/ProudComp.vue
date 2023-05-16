@@ -57,7 +57,7 @@ export default {
         <div class="w-75 d-flex flex-column align-items-center ">
             <!-- title -->
             <h2 class="py-5" style="font-size: 50px; font-weight: 300;">We are Proud</h2>
-            <p class="w-50 text-center" style="font-size: 16px;">Certificates courses are instructed by highly educated and
+            <p class="w-50 text-center" style="font-size: 16px;">Certificate courses are instructed by highly educated and
                 qualified instructor who
                 hold
                 doctoral and

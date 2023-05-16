@@ -6,7 +6,7 @@ export default {
 </script>
 
 <template>
-    <div class="d-flex justify-content-between align-items-baseline p-4">
+    <div class="d-flex justify-content-between align-items-baseline p-3">
         <div>
             <!-- selezione lingua -->
             <select class="form-select" aria-label="Default select example">

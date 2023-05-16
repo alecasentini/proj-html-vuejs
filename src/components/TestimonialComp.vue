@@ -15,7 +15,7 @@ export default {
                 <h3 style="font-size: 35px;">Come as you are</h3>
                 <p style="font-weight: 300; font-size: 18px; line-height: 30px;" class="py-4">MasterStudy used is an
                     excellent workshop
-                    wheter you come as a
+                    whether you come as a
                     counselour, advisor, administrator, or
                     faculty
                     member. I am going home empowered. I am looking forward to attending the On Course MasterStudy and the

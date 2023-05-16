@@ -12,7 +12,7 @@ export default {
             <div class="w-50">
                 <h4 class="fw-bolder">Subscribe our newsletter</h4>
                 <p style="font-weight: 300;">There are many variations of passages of Lorem Ipsum available, but the
-                    mayority have suffered
+                    majority have suffered
                     alternation in some form, by injected humor, or randomised words</p>
             </div>
 
