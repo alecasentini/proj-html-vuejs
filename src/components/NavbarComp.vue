@@ -69,10 +69,10 @@ ul {
         label {
             border-radius: 5px 5px 5px 0;
             background-color: #dc1245;
-            padding: 0 2px;
-            top: -100%;
+            padding: 0 4px;
+            top: -15px;
             right: 0;
-            font-size: 12px;
+            font-size: 11px;
 
         }
     }

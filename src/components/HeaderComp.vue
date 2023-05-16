@@ -43,14 +43,15 @@ export default {
         </div>
 
         <div class="d-flex align-items-center">
-            <div class="d-flex align-items-center">
+            <div class="d-flex align-items-center" style="cursor: pointer;">
                 <font-awesome-icon :icon="['far', 'user']" style="color: #195ec8;" />
                 <span class="ms-1" style="color: #195ec8;">Log in</span>
             </div>
 
             <button type="button" class="btn ms-4">SIGN UP</button>
 
-            <font-awesome-icon :icon="['far', 'bookmark']" class="ms-4" style="color: #195ec8; font-size: 22px;" />
+            <font-awesome-icon :icon="['far', 'bookmark']" class="ms-4"
+                style="color: #195ec8; font-size: 22px; cursor: pointer;" />
         </div>
 
 

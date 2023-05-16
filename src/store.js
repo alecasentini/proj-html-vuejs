@@ -10,7 +10,7 @@ export const store = reactive({
             featured: false,
             label: "",
             duration: '6 hours',
-            price: "free",
+            price: "Free",
             discount: "",
             rating: ""
         },
@@ -34,7 +34,7 @@ export const store = reactive({
             featured: false,
             label: "hot",
             duration: '',
-            price: "free",
+            price: "Free",
             discount: "",
             rating: "5"
         },

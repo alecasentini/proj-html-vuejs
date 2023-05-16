@@ -61,7 +61,7 @@ export default {
 
             </div>
 
-            <div class="d-flex justify-content-between flex-wrap">
+            <div class="d-flex justify-content-center flex-wrap">
                 <SingleCardCourseComp v-for="(elem, index) in filteredCourses" :key="index" :course="elem" />
 
 

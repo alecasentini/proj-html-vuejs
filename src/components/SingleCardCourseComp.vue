@@ -32,7 +32,8 @@ export default {
 
             <div class="d-flex justify-content-between p-0 mx-3 align-items-center">
                 <div>
-                    <p v-if="duration" class="m-0" style="font-size: 12px;"><font-awesome-icon :icon="['far', 'clock']" />
+                    <p v-if="course.duration" class="m-0" style="font-size: 12px;"><font-awesome-icon
+                            :icon="['far', 'clock']" />
                         {{ course.duration }}</p>
                     <span v-if="course.rating" class="m-0">
                         <font-awesome-icon v-for="n in parseInt(course.rating)" :key="n" :icon="['fas', 'star']"
@@ -61,8 +62,9 @@ export default {
     height: 310px !important;
     overflow: hidden;
     padding: 0;
-    margin-right: 5px;
-    width: calc(100% / 6 - 15px);
+    margin-left: 10px;
+    margin-right: 10px;
+    width: calc(100% / 6 - 20px);
     margin-top: 40px;
 
     .card-img-top {
