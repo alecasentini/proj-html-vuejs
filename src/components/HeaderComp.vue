@@ -15,10 +15,13 @@ export default {
 </script>
 
 <template>
+    <!-- navbar -->
     <div class="w-90">
         <NavbarComp />
     </div>
     <hr>
+
+    <!-- header + searchbar -->
     <div class="d-flex w-90 py-3 justify-content-between">
         <img src="../../public/MasterStudy_logo.svg" alt="logo">
 

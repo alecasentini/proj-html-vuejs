@@ -10,6 +10,7 @@ export default {
 <template>
     <div class="w-100 d-flex align-items-center">
         <div class="w-75 ">
+            <!-- Testimonial: balloon con bg-image -->
             <div class="balloon">
                 <h3 style="font-size: 35px;">Come as you are</h3>
                 <p style="font-weight: 300; font-size: 18px; line-height: 30px;" class="py-4">MasterStudy used is an

@@ -25,12 +25,17 @@ export default {
 </script>
 
 <template>
+    <!-- Searchbar -->
     <div class="position-relative">
+
+        <!-- input text -->
         <div class="input-group ms-2">
             <input type="text" class="form-control py-3" placeholder="Search courses" aria-describedby="basic-addon1"
                 v-model="searchQuery">
             <span class="input-group-text text-white px-4"><font-awesome-icon :icon="['fas', 'magnifying-glass']" /></span>
         </div>
+
+        <!-- lista dinamica -->
         <ul v-if="filteredCourses.length > 0">
             <li v-for="(course, index) in filteredCourses" :key="index">
                 <img :src="course.img" alt="" style="width: 50px;">

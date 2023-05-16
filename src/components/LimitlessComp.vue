@@ -8,6 +8,7 @@ export default {
 </script>
 
 <template>
+    <!-- limitless (image + div) -->
     <div class="w-100 d-flex align-items-center my-5" id="limitless">
         <div class="w-75">
             <div class="w-50">

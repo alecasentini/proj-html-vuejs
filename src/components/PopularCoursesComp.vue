@@ -44,16 +44,20 @@ export default {
 <template>
     <div class="w-100 d-flex justify-content-center">
         <div class="w-90 d-flex flex-column align-items-center">
+
+            <!-- title -->
             <h2 class="pt-5 pb-2" style="font-size: 50px; font-weight: 300;">Popular Courses</h2>
             <p style="font-weight: 300;">Discover our most popular courses for self learning</p>
 
+            <!-- cards con slide -->
             <div class="d-flex justify-content-between flex-wrap">
                 <SingleCardCourseComp v-for="(elem, index) in filteredCourses" :key="index" :course="elem" />
             </div>
+
+            <!-- pulsanti slider -->
             <div class="mt-5">
                 <span @click="prev"><font-awesome-icon :icon="['fas', 'angle-left']" /></span>
                 <span @click="next"><font-awesome-icon :icon="['fas', 'angle-right']" /></span>
-
             </div>
         </div>
 

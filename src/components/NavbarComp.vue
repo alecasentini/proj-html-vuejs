@@ -53,6 +53,10 @@ export default {
 select {
     border: 0;
     font-size: 14px;
+
+    &:hover {
+        cursor: pointer;
+    }
 }
 
 ul {

@@ -45,6 +45,7 @@ export default {
         <div class="w-90 my-5 ">
             <h2 class="text-center py-3" style="font-size: 50px; font-weight: 300;">Recent Courses</h2>
 
+            <!-- Categories -->
             <div class="d-flex justify-content-center">
                 <ul class="d-flex ps-0">
                     <li :class="{ active: activeCategory === 'All Categories' }"
@@ -61,16 +62,20 @@ export default {
 
             </div>
 
+            <!-- Cards -->
             <div class="d-flex justify-content-center flex-wrap">
                 <SingleCardCourseComp v-for="(elem, index) in filteredCourses" :key="index" :course="elem" />
 
 
             </div>
+
+            <!-- pulsante show all -->
             <div class="d-flex justify-content-center">
                 <button type="button" class="btn" @click="setActiveCategory('All Categories')">SHOW ALL</button>
             </div>
 
         </div>
+
         <!-- barra aside -->
         <div class="d-flex flex-column position-absolute" id="aside">
             <font-awesome-icon :icon="['fas', 'display']" />

@@ -8,6 +8,7 @@ export default {
 </script>
 
 <template>
+    <!-- 3 cards top -->
     <div class="d-flex w-75 justify-content-between py-5">
         <div class="p-5 lb-card">
             <font-awesome-icon :icon="['fas', 'earth-africa']" style="font-size: 50px

@@ -8,12 +8,15 @@ export default {
 <template>
     <div class="w-100 d-flex justify-content-center" id="subscribe">
         <div class="w-75 d-flex ">
+            <!-- testo -->
             <div class="w-50">
                 <h4 class="fw-bolder">Subscribe our newsletter</h4>
                 <p style="font-weight: 300;">There are many variations of passages of Lorem Ipsum available, but the
                     mayority have suffered
                     alternation in some form, by injected humor, or randomised words</p>
             </div>
+
+            <!-- form email -->
             <div class="w-50">
                 <h5 class="text-uppercase" style="font-weight: 300;">your e-mail address</h5>
                 <div class="input-group ms-2">
@@ -23,10 +26,7 @@ export default {
                 </div>
             </div>
 
-
         </div>
-
-
 
     </div>
 </template>

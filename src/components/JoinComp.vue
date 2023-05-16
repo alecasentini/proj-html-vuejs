@@ -7,6 +7,8 @@ export default {
 
 <template>
     <div class="w-90 d-flex justify-content-between">
+
+        <!-- 2 cards join -->
         <div class="join d-flex align-items-center">
             <img src="../../public/image_box_1-221x231.png" alt="teach">
             <div class="d-flex flex-column p-3 w-50">

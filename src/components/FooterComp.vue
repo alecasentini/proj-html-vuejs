@@ -8,8 +8,10 @@ export default {
 </script>
 
 <template>
+    <!-- footer -->
     <div class="w-75 d-flex">
 
+        <!-- about -->
         <div class="w-25" id="about">
             <h5>About</h5>
             <p><a href="#">Masterstudy</a> is Education WordPress theme featured by Learning Management System (LMS) for
@@ -21,6 +23,7 @@ export default {
             </ul>
         </div>
 
+        <!-- contact -->
         <div class="w-25" id="contact">
             <h5>Contact</h5>
             <p>Usa, California 20, First Avenue,<br>California</p>
@@ -28,6 +31,7 @@ export default {
             <a href="#">info@masterstudy.com</a>
         </div>
 
+        <!-- pages -->
         <div class="w-25" id="pages">
             <h5>Pages</h5>
             <div class="d-flex">
@@ -45,6 +49,7 @@ export default {
             </div>
         </div>
 
+        <!-- blog -->
         <div class="w-25" id="blog">
             <h5>Blog</h5>
             <div class="d-flex p-3 article">

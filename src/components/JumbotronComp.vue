@@ -6,6 +6,7 @@ export default {
 </script>
 
 <template>
+    <!-- jumbotron -->
     <div class="d-flex w-75 align-items-center my-5" id="jumbo">
         <div class="w-50">
             <h1 style="font-size: 65px;">Start Investing in You</h1>
