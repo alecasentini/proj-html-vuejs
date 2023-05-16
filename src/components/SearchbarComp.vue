@@ -17,6 +17,13 @@ export default {
                 course.category.toLowerCase().includes(this.searchQuery.toLowerCase())
             );
         }
+    },
+    mounted() {
+        document.addEventListener('click', (event) => {
+            if (!this.$refs.list.contains(event.target)) {
+                this.searchQuery = '';
+            }
+        });
     }
 
 
@@ -36,7 +43,7 @@ export default {
         </div>
 
         <!-- lista dinamica -->
-        <ul v-if="filteredCourses.length > 0">
+        <ul v-if="filteredCourses.length > 0" ref="list">
             <li v-for="(course, index) in filteredCourses" :key="index">
                 <img :src="course.img" alt="" style="width: 50px;">
                 <span class="fw-bolder px-1" style="font-size: 16px;">{{ course.name }} </span>
