@@ -6,7 +6,13 @@ export default {
         return {
             store,
             searchQuery: '',
+            showList: true,
 
+        }
+    },
+    methods: {
+        handleFocus() {
+            this.showList = true;
         }
     },
     computed: {
@@ -20,12 +26,11 @@ export default {
     },
     mounted() {
         document.addEventListener('click', (event) => {
-            if (!this.$refs.list.contains(event.target)) {
-                this.searchQuery = '';
+            if (!this.$refs.list.contains(event.target) && event.target !== this.$refs.input) {
+                this.showList = false;
             }
         });
     }
-
 
 }
 
@@ -38,12 +43,12 @@ export default {
         <!-- input text -->
         <div class="input-group ms-2">
             <input type="text" class="form-control py-3" placeholder="Search courses" aria-describedby="basic-addon1"
-                v-model="searchQuery">
+                v-model="searchQuery" @click="handleFocus" ref="input">
             <span class="input-group-text text-white px-4"><font-awesome-icon :icon="['fas', 'magnifying-glass']" /></span>
         </div>
 
         <!-- lista dinamica -->
-        <ul v-if="filteredCourses.length > 0" ref="list">
+        <ul v-if="filteredCourses.length > 0 && showList" ref="list">
             <li v-for="(course, index) in filteredCourses" :key="index">
                 <img :src="course.img" alt="" style="width: 50px;">
                 <span class="fw-bolder px-1" style="font-size: 16px;">{{ course.name }} </span>
