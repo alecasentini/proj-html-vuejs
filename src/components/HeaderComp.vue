@@ -1,12 +1,15 @@
 <script >
 import NavbarComp from './NavbarComp.vue';
+import SearchbarComp from './SearchbarComp.vue';
+
 
 export default {
     name: "HeaderComp",
-    component: {
-        NavbarComp
-    },
-    components: { NavbarComp }
+    components: {
+        NavbarComp,
+        SearchbarComp
+    }
+
 }
 
 </script>
@@ -24,11 +27,7 @@ export default {
                 <font-awesome-icon :icon="['fas', 'bars']" />
                 <span class="ms-1">CATEGORY</span>
             </div>
-            <div class="input-group ms-2">
-                <input type="text" class="form-control py-3" placeholder="Search courses" aria-describedby="basic-addon1">
-                <span class="input-group-text text-white px-4"><font-awesome-icon
-                        :icon="['fas', 'magnifying-glass']" /></span>
-            </div>
+            <SearchbarComp />
         </div>
 
         <div class="d-flex align-items-center">
@@ -54,9 +53,6 @@ export default {
                 style="color: #195ec8; font-size: 22px; cursor: pointer;" />
         </div>
 
-
-
-
     </div>
 </template>
 
@@ -69,23 +65,6 @@ hr {
 .w-90 {
     width: 90%;
     margin: 0 auto;
-}
-
-.input-group {
-    width: 500px;
-
-    .form-control {
-        background-color: #f0f2f5;
-        color: #77777a;
-        border-radius: 0;
-        border: 0;
-    }
-
-    .input-group-text {
-        border-radius: 0;
-        border: 0;
-        background-color: #195ec8;
-    }
 }
 
 a {
