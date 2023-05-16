@@ -5,6 +5,7 @@ import LimitlessComp from './LimitlessComp.vue'
 import RecentCoursesComp from './RecentCoursesComp.vue';
 import ProudComp from './ProudComp.vue';
 import SubscribeComp from './SubscribeComp.vue';
+import JoinComp from './JoinComp.vue'
 
 export default {
     name: "MainComp",
@@ -15,6 +16,7 @@ export default {
         RecentCoursesComp,
         ProudComp,
         SubscribeComp,
+        JoinComp
 
     }
 
@@ -29,6 +31,7 @@ export default {
     <RecentCoursesComp />
     <ProudComp />
     <SubscribeComp />
+    <JoinComp />
 </template>
 
 <style lang="scss" scoped></style>
