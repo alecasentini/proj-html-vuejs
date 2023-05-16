@@ -104,13 +104,15 @@ export default {
                 width: 100%;
                 transition: all 1s;
                 transform-origin: center;
-
-                &:hover {
-                    transform: scale(1.2);
-                    cursor: pointer;
-
-                }
             }
+        }
+
+        &:hover img {
+            transform: scale(1.2);
+        }
+
+        &:hover {
+            cursor: pointer;
         }
     }
 
@@ -122,14 +124,15 @@ export default {
                 width: 100%;
                 transition: all 1s;
                 transform-origin: center;
-
-                &:hover {
-                    transform: scale(1.2);
-
-                    cursor: pointer;
-
-                }
             }
+        }
+
+        &:hover img {
+            transform: scale(1.2);
+        }
+
+        &:hover {
+            cursor: pointer;
         }
     }
 }

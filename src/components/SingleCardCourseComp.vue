@@ -74,7 +74,7 @@ export default {
 
     &:hover {
         cursor: pointer;
-        transform: scale(1.1);
+        transform: scale(1.05);
     }
 
     .card-img-top {

@@ -177,10 +177,14 @@ export default {
                 text-decoration: none;
                 font-weight: bold;
                 font-size: 15px;
+            }
 
-                &:hover {
-                    color: black;
-                }
+            &:hover {
+                cursor: pointer;
+            }
+
+            &:hover a {
+                color: black;
             }
         }
     }
