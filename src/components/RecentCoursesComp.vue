@@ -186,36 +186,46 @@ export default {
 </script>
 
 <template>
-    <div class="w-90 my-5 ">
-        <h2 class="text-center py-3" style="font-size: 50px; font-weight: 300;">Recent Courses</h2>
+    <div class="w-100 position-relative">
+        <div class="w-90 my-5 ">
+            <h2 class="text-center py-3" style="font-size: 50px; font-weight: 300;">Recent Courses</h2>
 
-        <div class="d-flex justify-content-center">
-            <ul class="d-flex ps-0">
-                <li :class="{ active: activeCategory === 'All Categories' }" @click="setActiveCategory('All Categories')">
-                    All Categories
-                </li>
-                <li v-for="category in categories" :key="category" :class="{ active: activeCategory === category }"
-                    @click="setActiveCategory(category)">
-                    {{ category }}
-                </li>
+            <div class="d-flex justify-content-center">
+                <ul class="d-flex ps-0">
+                    <li :class="{ active: activeCategory === 'All Categories' }"
+                        @click="setActiveCategory('All Categories')">
+                        All Categories
+                    </li>
+                    <li v-for="category in categories" :key="category" :class="{ active: activeCategory === category }"
+                        @click="setActiveCategory(category)">
+                        {{ category }}
+                    </li>
 
-            </ul>
+                </ul>
 
+
+            </div>
+
+            <div class="d-flex justify-content-between flex-wrap">
+                <SingleCardCourseComp v-for="(elem, index) in filteredCourses" :key="index" :img="elem.img"
+                    :category="elem.category" :subcategory="elem.subcategory" :name="elem.name" :featured="elem.featured"
+                    :label="elem.label" :duration="elem.duration" :price="elem.price" :discount="elem.discount"
+                    :rating="elem.rating" />
+
+            </div>
+            <div class="d-flex justify-content-center">
+                <button type="button" class="btn" @click="setActiveCategory('All Categories')">SHOW ALL</button>
+            </div>
 
         </div>
-
-        <div class="d-flex justify-content-between flex-wrap">
-            <SingleCardCourseComp v-for="(elem, index) in filteredCourses" :key="index" :img="elem.img"
-                :category="elem.category" :subcategory="elem.subcategory" :name="elem.name" :featured="elem.featured"
-                :label="elem.label" :duration="elem.duration" :price="elem.price" :discount="elem.discount"
-                :rating="elem.rating" />
-
+        <!-- barra aside -->
+        <div class="d-flex flex-column position-absolute" id="aside">
+            <font-awesome-icon :icon="['fas', 'display']" />
+            <font-awesome-icon :icon="['fas', 'life-ring']" />
+            <font-awesome-icon :icon="['fas', 'wrench']" />
+            <font-awesome-icon :icon="['fas', 'cart-shopping']" />
+            <font-awesome-icon :icon="['fas', 'mobile-screen-button']" />
         </div>
-        <div class="d-flex justify-content-center">
-            <button type="button" class="btn" @click="setActiveCategory('All Categories')">SHOW ALL</button>
-        </div>
-
-
     </div>
 </template>
 
@@ -255,6 +265,18 @@ ul {
     &:hover {
         background-color: #46c197;
         color: white;
+    }
+}
+
+#aside {
+    box-shadow: -2px 3px 5px 3px lightgray;
+    width: 50px;
+    bottom: 0;
+    right: 0;
+
+    svg {
+        padding: 15px;
+        font-size: 30px;
     }
 }
 </style>
