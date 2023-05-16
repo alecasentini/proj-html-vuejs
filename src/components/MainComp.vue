@@ -6,6 +6,7 @@ import RecentCoursesComp from './RecentCoursesComp.vue';
 import ProudComp from './ProudComp.vue';
 import SubscribeComp from './SubscribeComp.vue';
 import JoinComp from './JoinComp.vue'
+import TestimonialComp from './TestimonialComp.vue'
 
 export default {
     name: "MainComp",
@@ -16,7 +17,8 @@ export default {
         RecentCoursesComp,
         ProudComp,
         SubscribeComp,
-        JoinComp
+        JoinComp,
+        TestimonialComp
 
     }
 
@@ -32,6 +34,7 @@ export default {
     <ProudComp />
     <SubscribeComp />
     <JoinComp />
+    <TestimonialComp />
 </template>
 
 <style lang="scss" scoped></style>
