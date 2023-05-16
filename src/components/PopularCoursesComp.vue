@@ -10,11 +10,30 @@ export default {
     data() {
         return {
             store,
+            currentIndex: 0
         }
     },
     computed: {
         filteredCourses() {
-            return this.store.courses.slice(0, 6);
+            const start = this.currentIndex;
+            const end = start + 6;
+            return this.store.courses.slice(start, end);
+        }
+    },
+    methods: {
+        next() {
+            if (this.currentIndex < this.store.courses.length - 6) {
+                this.currentIndex++;
+            } else {
+                this.currentIndex = 0;
+            }
+        },
+        prev() {
+            if (this.currentIndex > 0) {
+                this.currentIndex--;
+            } else {
+                this.currentIndex = this.store.courses.length - 6;
+            }
         }
     }
 
@@ -32,8 +51,8 @@ export default {
                 <SingleCardCourseComp v-for="(elem, index) in filteredCourses" :key="index" :course="elem" />
             </div>
             <div class="mt-5">
-                <span><font-awesome-icon :icon="['fas', 'angle-left']" /></span>
-                <span><font-awesome-icon :icon="['fas', 'angle-right']" /></span>
+                <span @click="prev"><font-awesome-icon :icon="['fas', 'angle-left']" /></span>
+                <span @click="next"><font-awesome-icon :icon="['fas', 'angle-right']" /></span>
 
             </div>
         </div>
@@ -59,6 +78,7 @@ export default {
         background-color: white;
         text-align: center;
         line-height: 44px;
+        cursor: pointer;
 
         svg {
             color: lightgray;
