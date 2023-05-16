@@ -135,6 +135,11 @@ ul {
     svg {
         padding: 15px;
         font-size: 30px;
+
+        &:hover {
+            background-color: #f0f4fa;
+            cursor: pointer;
+        }
     }
 }
 </style>

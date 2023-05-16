@@ -22,7 +22,7 @@ export const store = reactive({
             featured: true,
             label: "new",
             duration: '6 hours',
-            price: "$46",
+            price: "$45",
             discount: "$60",
             rating: ""
         },
