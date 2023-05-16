@@ -70,6 +70,12 @@ export default {
     margin-right: 10px;
     width: calc(100% / 6 - 20px);
     margin-top: 40px;
+    transition: all 0.8s;
+
+    &:hover {
+        cursor: pointer;
+        transform: scale(1.1);
+    }
 
     .card-img-top {
         border-radius: 0;

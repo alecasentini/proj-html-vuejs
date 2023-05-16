@@ -68,6 +68,10 @@ ul {
         a {
             text-decoration: none;
             color: #77777a;
+
+            &:hover {
+                color: #195ec8;
+            }
         }
 
         label {
@@ -77,7 +81,6 @@ ul {
             top: -15px;
             right: 0;
             font-size: 11px;
-
         }
     }
 }

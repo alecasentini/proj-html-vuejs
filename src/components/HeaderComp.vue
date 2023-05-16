@@ -26,7 +26,7 @@ export default {
         <img src="../../public/MasterStudy_logo.svg" alt="logo">
 
         <div class="d-flex align-items-center">
-            <div class="d-flex align-items-center">
+            <div class="d-flex align-items-center" style="cursor: pointer;">
                 <font-awesome-icon :icon="['fas', 'bars']" />
                 <span class="ms-1">CATEGORY</span>
             </div>

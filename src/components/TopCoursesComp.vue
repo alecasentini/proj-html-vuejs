@@ -89,10 +89,6 @@ export default {
             </div>
         </div>
 
-
-
-
-
     </div>
 </template>
 
@@ -106,12 +102,11 @@ export default {
 
             img {
                 width: 100%;
-
+                transition: all 1s;
+                transform-origin: center;
 
                 &:hover {
                     transform: scale(1.2);
-                    transition: all 1s;
-                    transform-origin: center;
                     cursor: pointer;
 
                 }
@@ -125,11 +120,12 @@ export default {
 
             img {
                 width: 100%;
+                transition: all 1s;
+                transform-origin: center;
 
                 &:hover {
                     transform: scale(1.2);
-                    transition: all 1s;
-                    transform-origin: center;
+
                     cursor: pointer;
 
                 }

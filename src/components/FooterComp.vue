@@ -110,6 +110,10 @@ export default {
                         font-size: 20px;
                         margin-right: 20px;
                     }
+
+                    &:hover {
+                        color: #195ec8;
+                    }
                 }
             }
         }
@@ -124,6 +128,10 @@ export default {
             text-decoration: none;
             color: #aaaaaa;
             font-size: 13px;
+
+            &:hover {
+                color: #195ec8;
+            }
         }
     }
 
@@ -140,6 +148,10 @@ export default {
                     font-weight: 300;
                     line-height: 40px;
                     font-size: 15px;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
                 }
             }
         }
@@ -165,6 +177,10 @@ export default {
                 text-decoration: none;
                 font-weight: bold;
                 font-size: 15px;
+
+                &:hover {
+                    color: black;
+                }
             }
         }
     }
